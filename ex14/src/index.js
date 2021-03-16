@@ -1,21 +1,36 @@
 // Only change code below this line
 function myForLoop1(){
-    for(var evenNumbers = 0; evenNumbers <= 8; evenNumbers++){
-        if (evenNumbers % 2 == 0){
-            console.log(evenNumbers);
+    var evenNumbers = "";
+    for(var i = 0; i <= 8; i++){
+        var x;
+        x = i % 2;
+        if(x == 0){
+            evenNumbers += i;
+        if(i != 8){
+            evenNumbers += ", "
         }
-        
+        }
     }
+    return evenNumbers;
 }
+    
+
 function myForLoop2(){
-    for(var evenInverseNumbers = 8; evenInverseNumbers >= 0; evenInverseNumbers--){
-        if (evenInverseNumbers % 2 == 0){
-            console.log(evenInverseNumbers);
+    var evenInverseNumbers = "";
+    for(var i = 8; i >= 0; i--){
+        var x;
+        x = i % 2;
+        if(x == 0){
+            evenInverseNumbers += i;
+        if(i != 0){
+            evenInverseNumbers += ", "
+        }
         }
     }
+    return evenInverseNumbers;
 }
-myForLoop1();
-myForLoop2();
+console.log(myForLoop1());
+console.log(myForLoop2());
 // Only change code above this line
           
 module.exports = {
