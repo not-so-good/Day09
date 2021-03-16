@@ -1,5 +1,3 @@
-
-
 // Only change code below this line
 function compareStrictValues(m){
     if(m != 55){
